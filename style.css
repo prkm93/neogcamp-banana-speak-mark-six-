@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    height: 100vh;
     font-family: 'Hina Mincho', cursive;
     font-size: 24px;
     font-style: italic;
@@ -14,7 +15,29 @@ textarea{
     margin: 0 auto;
     height: 20vh;
 }
+textarea::placeholder{
+    font-style: italic;
+}
 .header{    
-    height: 10vh;
-    background-color: chartreuse;
+    background-color:mediumseagreen;
+    padding: 0.2em 0;
+}
+.content-box{
+    margin: 1em;
+}
+#btn-translate{
+    background-color: mediumseagreen;
+    font-style: italic;
+    padding: 1em;
+    border-radius: 10px;
+    font-size:1em;
+    cursor: pointer;
+}
+footer{
+    background-color:mediumseagreen;
+    padding: 0.2em 0;
+}
+.footer {
+    width: 60%;
+    margin: 0 auto;
 }

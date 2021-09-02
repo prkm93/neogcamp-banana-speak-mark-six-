@@ -1,9 +1,11 @@
-const btnTranslate = document.querySelector('#btn-translate');
 const textInput = document.querySelector('#text-input');
+const btnTranslate = document.querySelector('#btn-translate');
+const bananaConversion = document.querySelector('#banana-conversion');
 
-console.log(btnTranslate);
-console.log(textInput);
+console.log(textArea);
 
-btnTranslate.addEventListener('click', function(){
-    console.log('clicked');
-})
+btnTranslate.addEventListener('click', clickHandler)
+
+function clickHandler() {
+    console.log(textInput.value);
+}
