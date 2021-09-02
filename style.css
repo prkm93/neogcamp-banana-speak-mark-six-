@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Hina Mincho', cursive;
+    font-size: 24px;
+    font-style: italic;
+}
+textarea{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    height: 20vh;
+}
+.header{    
+    height: 10vh;
+    background-color: chartreuse;
+}
