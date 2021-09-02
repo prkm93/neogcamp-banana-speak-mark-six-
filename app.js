@@ -1,11 +1,21 @@
 const textInput = document.querySelector('#text-input');
 const btnTranslate = document.querySelector('#btn-translate');
 const bananaConversion = document.querySelector('#banana-conversion');
-
-console.log(textArea);
+const serverURL = 'https://api.funtranslations.com/translate/minion.json';
 
 btnTranslate.addEventListener('click', clickHandler)
 
 function clickHandler() {
-    console.log(textInput.value);
+    const inputText = textInput.value; // taking input
+
+    // calling server 
+    fetch(getTranslationURL(inputText))
+    .then(response => response.json())
+    .then(json => bananaConversion.textContent = json.contents.translated) //output
+    .catch(error => console.error(error))
+}
+
+
+function getTranslationURL(text) {
+    return (`${serverURL}?text=${encodeURI(text)}`);
 }
